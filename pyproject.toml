@@ -1,0 +1,29 @@
+# Shared tooling configuration for all apps in this repository.
+# Author: Faizan Saleem Siddiqui (https://github.com/FaizanSSDQ)
+
+[tool.pytest.ini_options]
+addopts = "-q --import-mode=importlib"
+pythonpath = [
+    "Audio-to-Text-Converter-App",
+    "Data-Scraper-App",
+    "Data-Visualization-App",
+    "Keywords-Density-Checker-App",
+    "Picture-Editor-App",
+    "URL-Shortener-App",
+    "Youtube-Keyword-Extractor-App",
+]
+filterwarnings = [
+    "ignore:Couldn't find ffmpeg:RuntimeWarning",
+    "ignore::DeprecationWarning:speech_recognition",
+    "ignore::SyntaxWarning",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["transcriber", "scraper", "viz", "density", "editor", "shortener", "youtube"]

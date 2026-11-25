@@ -1,0 +1,11 @@
+# Everything needed to run all apps and the full test suite:
+#   pip install -r requirements-dev.txt
+-r Audio-to-Text-Converter-App/requirements.txt
+-r Data-Scraper-App/requirements.txt
+-r Data-Visualization-App/requirements.txt
+-r Keywords-Density-Checker-App/requirements.txt
+-r Picture-Editor-App/requirements.txt
+-r URL-Shortener-App/requirements.txt
+-r Youtube-Keyword-Extractor-App/requirements.txt
+pytest>=8.0
+ruff>=0.6
