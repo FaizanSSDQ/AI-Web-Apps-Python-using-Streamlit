@@ -1,4 +1,4 @@
-streamlit
-matplotlib
-numpy
-pandas
+streamlit>=1.47
+SpeechRecognition>=3.10
+pydub>=0.25.1
+audioop-lts>=0.2; python_version >= "3.13"
