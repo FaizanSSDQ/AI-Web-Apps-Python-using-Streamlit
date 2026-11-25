@@ -1,5 +1,2 @@
-streamlit
-pillow
-numpy
-matplotlib
-seaborn
+streamlit>=1.47
+Pillow>=10.0
